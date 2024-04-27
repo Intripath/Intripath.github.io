@@ -15,20 +15,14 @@
     </head>
 
     <body>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="rightVerticalLine">intripath.github.io</a>
-            <a href="image.html">Image Page Test</a>
-            <a href="text.html">Text Page Test</a>
-            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="images/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
-            </a>
-        </div>
+        <div class="topnav" id="myTopnav"> </div>
 
         <div class="hero-image" style="background-image: url('images/header-bg.jpg');">
             <div class="coverDiv">
                 <img class="coverArt rounded" src="images/logo.png" alt="Logo" height="350" width="350"></img>
                 <div class="hero-text">
                     <h1>Intripath</h1>
-                    <h3>Portfolio With Most Of My Projects</h3>
+                    <h3>Fullstack Developer, UI Designer</h3>
                 </div>
             </div>
         </div>
@@ -39,7 +33,7 @@
             <div class="grid">
                 <a href="image.html" class="card">
                     <div class="content">
-                        <img src="img/card1.jpg" alt="Card Image" height="390" width="390"></img>
+                        <img src="images/card1.jpg" alt="Card Image" height="390" width="390"></img>
                         <div class="card-body">
                             <div class="subtitle">Simulator</div>
                             <div class="title">Punchmade Simulator</div>
@@ -48,6 +42,18 @@
                     </div>
                 </a>
             </div>
+
         </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </body>
 </html>
