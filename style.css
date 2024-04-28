@@ -77,6 +77,14 @@ h4 a:hover {
     position: relative;
 }
 
+.coverArt {
+    transition: all 0.2s ease;
+}
+
+.coverArt:hover {
+    transform: scale(1.1);
+}
+
 .descriptionDiv {
     display: block;
     margin-left: auto;
@@ -100,8 +108,14 @@ h4 a:hover {
 }
 
 .socialLink {
+    transition: all 0.25s ease;
     height: 25px;
     vertical-align: middle;
+}
+
+.socialLink:hover {
+    transform: scale(1.15);
+    -webkit-transform: rotate(-12.5deg) translateZ(0);
 }
 
 .subtle {
@@ -140,10 +154,6 @@ h4 a:hover {
     position: relative;
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 25%;
-}
-
-.card-body a:hover {
     max-width: 25%;
 }
 
@@ -225,8 +235,13 @@ h4 a:hover {
 }
 
 .content {
-    margin-left: 5px;
-    margin-right: 5px;
+    transition: all 0.225s ease;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.content:hover {
+    transform: scale(1.075);
 }
 
 .card img {
