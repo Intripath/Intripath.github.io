@@ -55,7 +55,29 @@ h4 a:hover {
 }
 
 .h2 {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+}
+
+.h2B {
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    max-width:  280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 30px 30px 30px 30px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    transition: all 0.3s ease;
+}
+
+.h2B:hover {
+    transform: scale(1.25);
 }
 
 .rounded {
@@ -155,6 +177,10 @@ h4 a:hover {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
+    opacity: 0;
+	filter: blur(2px);
+	transition: all 1s;
+	transform: translateX(30%);
 }
 
 .subtitle {
@@ -295,6 +321,18 @@ h4 a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.hidden{
+	opacity: 0;
+	filter: blur(2px);
+	transition: all 2s;
+}
+
+.show {
+	filter: blur(0px);
+	opacity: 1;
+	transform: translateX(0%);
 }
 
 @media screen and (max-width: 1200px) {
