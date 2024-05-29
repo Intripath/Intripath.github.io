@@ -161,6 +161,11 @@ h4 a:hover {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+    transition: all 0.3s ease;
+}
+
+.textBubbleDiv:hover {
+    transform: scale(1.1);
 }
 
 .grid {
@@ -229,7 +234,7 @@ h4 a:hover {
     margin-bottom: 15px;
     margin-top: 0px;
     padding: auto;
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
@@ -239,7 +244,7 @@ h4 a:hover {
 
 .contact {
     background-color: rgb(50, 50, 50);
-    padding: 25px;
+    padding: 0.1px;
     margin: auto;
 }
 
@@ -333,6 +338,18 @@ h4 a:hover {
 	filter: blur(0px);
 	opacity: 1;
 	transform: translateX(0%);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgb(40, 40, 40); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(75, 75, 75); 
 }
 
 @media screen and (max-width: 1200px) {
