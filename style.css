@@ -100,7 +100,7 @@ h4 a:hover {
 }
 
 .coverArt {
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .coverArt:hover {
